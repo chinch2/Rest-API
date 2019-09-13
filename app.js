@@ -1,11 +1,7 @@
 const express = require("express");
+const mongoose = require("mongoose");
 
 const app = express();
-
-//Middlewares
-app.use("/post", () => {
-  console.log("This is a middleware running");
-});
 
 // Now you can Routes
 //ROUTES
@@ -15,6 +11,11 @@ app.get("/", (req, res) => {
 
 app.get("/post", (req, res) => {
   res.send("We are on post");
+});
+
+//Connect to DB
+mongoose.connect("", () => {
+  console.log("Connected to DB");
 });
 
 //Turn on the server and start listening
