@@ -2,11 +2,11 @@
   "name": "restapi",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "saving_test.js",
   "scripts": {
-    "start": "nodemon app",
+    "start": "nodemon connection",
     "test": "mocha",
-    "dev": "node app"
+    "dev": "node connection"
   },
   "author": "Jose Arguello",
   "license": "ISC",
